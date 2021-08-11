@@ -1,0 +1,107 @@
+:root {
+    --vermelho:#e50914;
+    --preta:#141414;
+    --cinza:#e5e5e5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--preta);
+    font-family: 'arial', Times, serif;
+    color:white;
+}
+
+.container{
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    color: var(--vermelho);
+    font-family: 'arial black';
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color:var(--cinza);
+    margin-right: 10px;
+    font-weight: 300;
+}
+
+header nav a:hover {
+    color: #fff;
+}
+
+/* Filme Principal */
+
+.filme-principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/capa.jpg');
+    height: 400px;
+    background-size: cover;
+    background-position-y: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao {
+    margin-bottom: 30px;
+    margin-top: 10px;
+    text-align: justify;
+}
+
+.filme-principal .titulo {
+    margin-top: 15%;
+    font-size: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
+}
+
+.filme-principal .container {
+    width: 60%;
+}
+
+.botao {
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .7s ease all;
+}
+
+.botao:hover {
+    background-color: white;
+    color: var(--preta);
+}
+
+.botao i {
+    margin-right: 8px;
+}
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filmes {
+    margin-top: 10px;
+}
