@@ -1,2 +1,2 @@
-# netflix-clone
+# MarvelFlix
 Clone do NetFLIX DIO
